@@ -19,10 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             // Agregar el botón y el evento de redirección
-            const backButton = document.getElementById("back-to-index");
+            const backButton = document.createElement("button");
+            backButton.id = "back-to-index";
+            backButton.textContent = "Regresar";
             backButton.addEventListener("click", function () {
-                window.location.href = "/"; // Redirige al index.html
+                window.location.href = "/";
             });
+
+            contactDetailsDiv.appendChild(backButton);
         })
         .catch(error => console.error("Error al obtener detalles del contacto:", error));
 });
