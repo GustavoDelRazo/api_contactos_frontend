@@ -27,7 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("telefono").value = "";
 
                 // Mostrar una alerta
-                alert("Contacto insertado con éxito");
+                alert("Contacto insertado exitosamente");
+
+                // Redirigir a la página principal
+                window.location.href = "pagina_principal.html";
             } else {
                 insertResultDiv.innerHTML = "<p>Error al insertar el contacto.</p>";
             }
