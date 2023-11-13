@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     insertForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        
+
         const email = document.getElementById("email").value;
         const nombre = document.getElementById("nombre").value;
         const telefono = document.getElementById("telefono").value;
@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("email").value = "";
                 document.getElementById("nombre").value = "";
                 document.getElementById("telefono").value = "";
+
+                // Mostrar una alerta
+                alert("Contacto insertado con éxito");
             } else {
                 insertResultDiv.innerHTML = "<p>Error al insertar el contacto.</p>";
             }
