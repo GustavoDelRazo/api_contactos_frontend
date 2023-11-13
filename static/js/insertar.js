@@ -28,9 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Mostrar una alerta
                 alert("Contacto insertado con éxito");
-
-                // Redirigir al usuario al índice
-                window.location.href = "index.html"; // Reemplaza "index.html" con la ubicación de tu página de índice.
             } else {
                 insertResultDiv.innerHTML = "<p>Error al insertar el contacto.</p>";
             }
