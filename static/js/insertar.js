@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert("Contacto insertado exitosamente");
 
                 // Redirigir a la página principal
-                window.location.href = "pagina_principal.html";
+                window.location.href = "/";
             } else {
                 insertResultDiv.innerHTML = "<p>Error al insertar el contacto.</p>";
             }
