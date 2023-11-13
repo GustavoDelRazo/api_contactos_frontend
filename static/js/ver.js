@@ -17,6 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>Nombre: ${data.nombre}</p>
                 <p>Teléfono: ${data.telefono}</p>
             `;
+
+            // Agregar el botón y el evento de redirección
+            const backButton = document.getElementById("back-to-index");
+            backButton.addEventListener("click", function () {
+                window.location.href = "index.html"; // Redirige al index.html
+            });
         })
         .catch(error => console.error("Error al obtener detalles del contacto:", error));
 });
